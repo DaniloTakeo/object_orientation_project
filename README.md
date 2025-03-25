@@ -25,7 +25,7 @@ A estrutura do sistema é representada pelo seguinte diagrama UML:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone git@github.com:DaniloTakeo/object_orientation_project.git
    ```
 2. Compile e execute o projeto:
    ```bash
