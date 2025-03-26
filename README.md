@@ -20,6 +20,7 @@ A estrutura do sistema é representada pelo seguinte diagrama UML:
 - Collections (List, ArrayList)
 - Enum para controle de status de pagamento
 - Interface para serviços de pagamento
+- Lombok para códigos boiler plate
 
 ## 🎯 Como Executar
 
