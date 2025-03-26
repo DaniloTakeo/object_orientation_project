@@ -20,7 +20,7 @@ public class TestePlataforma {
         aluno.inscreverNoCurso(curso);
         
         System.out.println("O curso " + curso.getTitulo() + " foi criado por " + instrutor.getNome());
-        System.out.println("Aluno " + aluno.getNome() + " inscrito no curso: " + aluno.listarCursos().get(0).getTitulo());
+        System.out.println("Aluno " + aluno.getNome() + " inscrito no curso: " + aluno.getListaDeCursos().get(0).getTitulo());
         
         Pagamento pagamento = new PagamentoCartao();
         pagamento.pagar(new BigDecimal("99.99"));

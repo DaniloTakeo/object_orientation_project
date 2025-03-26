@@ -4,40 +4,42 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import model.pessoa.Aluno;
 import model.pessoa.Instrutor;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Curso {
-	
-    private String titulo;
-    private String descricao;
-    private BigDecimal preco;
-    private Instrutor instrutor;
-    private List<Modulo> modulos = new ArrayList<>();
-    private List<Aluno> alunosMatriculados = new ArrayList<>();
+	private String titulo;
+	private String descricao;
+	private BigDecimal preco;
+	private Instrutor instrutor;
+	private List<Modulo> modulos;
+	private List<Aluno> alunosMatriculados;
 
-    public Curso(String titulo, String descricao, BigDecimal preco, Instrutor instrutor) {
-        this.titulo = titulo;
-        this.descricao = descricao;
-        this.preco = preco;
-        this.instrutor = instrutor;
-    }
-    
-    public void adicionarModulo(Modulo modulo) {
-        modulos.add(modulo);
-    }
-    
-    public List<Aluno> listarAlunos() {
-        return alunosMatriculados;
-    }
-    
-    public void removerAluno(Aluno aluno) {
-        alunosMatriculados.remove(aluno);
-    }
-    
-    public void adicionarAluno(Aluno aluno) {
-        alunosMatriculados.add(aluno);
-    }
+	public void adicionarModulo(Modulo modulo) {
+		if (modulos == null) {
+			modulos = new ArrayList<>();
+		}
+		modulos.add(modulo);
+	}
+
+	public void removerAluno(Aluno aluno) {
+		if (alunosMatriculados == null) {
+			alunosMatriculados = new ArrayList<>();
+		}
+		alunosMatriculados.remove(aluno);
+	}
+
+	public List<Aluno> listarAlunos() {
+		return alunosMatriculados;
+	}
+
+	public List<Modulo> listarModulos() {
+		return modulos;
+	}
 }

@@ -2,11 +2,15 @@ package model.pagamento;
 
 import java.math.BigDecimal;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import model.curso.Curso;
 import model.pessoa.Aluno;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public abstract class Pagamento {
     
 	private BigDecimal valor;
