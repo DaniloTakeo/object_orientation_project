@@ -32,6 +32,27 @@ A estrutura do sistema é representada pelo seguinte diagrama UML:
    ```bash
    javac *.java && java TestePlataforma
    ```
+## 🚀 Executando a Aplicação com Docker
+Para rodar a aplicação em um container Docker, siga os passos abaixo:
+
+🛠️ Pré-requisitos
+- Ter o Docker instalado na sua máquina.
+- Acesso à internet para baixar a imagem do Docker Hub.
+
+## 🔄 Passo a passo
+1️⃣ Baixar a imagem do Docker Hub
+   ```bash
+   docker pull danilotakeo/object-orientation:latest
+   ```
+2️⃣ Executar o container
+   ```bash
+   docker run --rm -it danilotakeo/object-orientation
+   ```
+Para parar o container:
+   ```bash
+   docker stop plataforma-curso
+   ```
+
 
 ## Funcionamento do Menu
 Menu Principal
