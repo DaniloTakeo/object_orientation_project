@@ -36,6 +36,7 @@ A estrutura do sistema é representada pelo seguinte diagrama UML:
 ## Funcionamento do Menu
 Menu Principal
 O programa começa com um menu principal que oferece as seguintes opções:
+
 1 - Aluno: Acessa o submenu de gerenciamento de alunos.
 
 2 - Instrutor: Acessa o submenu de gerenciamento de instrutores.
